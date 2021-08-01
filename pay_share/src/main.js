@@ -13,7 +13,7 @@ axios.interceptors.request.use(function() {
 
 });
 
-axios.interceptots.response.use(function(response) {
+axios.interceptors.response.use(function(response) {
   let res = response;
   if (res.code !== 0) console.log('error');
 }, function(error) {
